@@ -9,4 +9,7 @@ int main(){
     printf("\nThe quotien value is:- %d",c);
     r=a-c*b; //remainder
     printf("\nThe remainder value is :- %d",r);
+    //OR
+    r=a%b;
+     printf("\nThe remainder value is :- %d",r);
 }
