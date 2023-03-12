@@ -6,7 +6,7 @@ int main()
     scanf("%d",&a);
     printf("The following is the table of :- %d",a);
     for(int i=1; 11>i>0; i++){
-    printf("\n:--> %d x %d = %d",a,i, i*a);
+    printf("\n %d x %d = %d",a,i, i*a);
     }
 
 }
