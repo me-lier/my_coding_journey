@@ -1,30 +1,37 @@
 #include<iostream>
 using namespace std;
 int main(){
+    //Declaring a row and columns of a Matrix...
     int r1,c1,r2,c2;
+    //Declaring 1st matrix...
     cin>>r1>>c1;
     int a[r1][c1];
     for(int i=0; i<r1; i++){
         for(int j=0; j<c1; j++){
+            // Taking values of matrix values...
             cin>>a[i][j];
         }
     }
     for(int i=0; i<r1; i++){
         for(int j=0; j<c1; j++){
             cout<<a[i][j]<<" ";
+            // Checking the inputs values...
         }
         cout<<endl;
     }
     cin>>r2>>c2;
     int b[r2][c2];
+    //Declaring 2nd matrix values...
     for(int i=0; i<r2; i++){
         for(int j=0; j<c2; j++){
+            // Taking values of matrix values...
             cin>>b[i][j];
         }
     }
     for(int i=0; i<r2; i++){
         for(int j=0; j<c2; j++){
             cout<<b[i][j]<<" ";
+            // Checking the inputs values...
         }
         cout<<endl;
     }
@@ -36,6 +43,7 @@ int main(){
                 value+=a[i][k]*b[k][j];
             }
             ans[i][j]=value;
+            //Multiplication.. of matrix.
         }
     }
     for(int i=0; i<r1; i++){
