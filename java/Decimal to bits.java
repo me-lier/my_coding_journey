@@ -5,16 +5,12 @@ public class Main{
         System.out.print("Enter a Decimal Number to Convert it into Binary:-> ");
         int n=sc.nextInt();
         int nn=n;
-        int arr[]=new int[8];
-        int i=arr.length-1;
+        String result="";
         while(n!=0){
             int x=n%2;
-            arr[i--]=x;
             n/=2;
+            result=x + result;
         }
-        System.out.print("This is the Following Binary Number of the "+nn+" is :-> ");
-        for(int ele:arr){
-            System.out.print(ele);
-        }
+        System.out.print("This is the Following Binary Number of the "+nn+" is :-> "+result);
     }
 }
